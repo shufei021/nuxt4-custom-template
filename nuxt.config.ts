@@ -37,7 +37,25 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ['@pinia/nuxt', '@nuxt/image', '@nuxtjs/sitemap'],
+  modules: [
+    '@pinia/nuxt', 
+    '@nuxt/image', 
+    'nuxt-icon',
+    '@nuxtjs/sitemap',
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode'
+  ],
+  // content: {
+  //   // 内容模块配置
+  //   documentDriven: true,
+  //   highlight: {
+  //     theme: 'github-dark'
+  //   }
+  // },
+  vite: {
+    // Vite 特定配置
+  },
   runtimeConfig:{
     public: {
       API_BASE_DEV: 'http://localhost:4000',

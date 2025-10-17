@@ -15,6 +15,5 @@ export default defineEventHandler(async (event) => {
     list: list.slice(offset, offset + limit),
     total: list.length,
   };
-
   return result(data);
 });
